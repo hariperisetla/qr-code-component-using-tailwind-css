@@ -14,34 +14,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
 
     <title>Frontend Mentor | QR code component</title>
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              white: "hsl(0, 0%, 100%)",
-              "light-gray": "hsl(212, 45%, 89%)",
-              "grayish-blue": "hsl(220, 15%, 55%)",
-              "dark-blue": "hsl(218, 44%, 22%)",
-            },
-          },
-        },
-      };
-    </script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      body {
-        font-family: "Outfit", sans-serif;
-      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -51,37 +29,33 @@
       }
     </style>
   </head>
-  <body class="bg-light-gray">
-    <div class="flex flex-col items-center justify-center h-screen">
-      <div
-        class="p-5 shadow-2xl shadow-grayish-blue/40 justify-center bg-white h-[540px] w-[350px] text-center my-auto rounded-3xl"
-      >
-        <div class="overflow-hidden pb-5">
-          <img
-            src="./images//image-qr-code.png"
-            alt="qr-code"
-            class="object-cover rounded-xl"
-          />
-        </div>
-        <div>
-          <h1 class="text-2xl font-bold text-dark-blue">
-            Improve your front-end skills by building projects
-          </h1>
-          <p class="text-grayish-blue p-4">
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
-        </div>
-      </div>
-      <div class="attribution p-2">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://www.frontendmentor.io/profile/hariperisetla"
-          >Hari Perisetla</a
-        >.
-      </div>
-    </div>
+  <body
+    class="bg-light-gray flex flex-col items-center justify-center h-screen"
+  >
+    <main
+      class="px-4 space-y-5 pt-4 shadow-2xl shadow-grayish-blue/40 justify-center bg-white h-[510px] w-[330px] text-center my-auto rounded-[1.25rem]"
+    >
+      <img
+        src="./images//image-qr-code.png"
+        alt="qr-code"
+        class="object-cover rounded-xl overflow-hidden"
+      />
+      <h1 class="px-3 text-[1.4rem] font-bold text-dark-blue leading-tight">
+        Improve your front-end skills by building projects
+      </h1>
+      <p class="px-3 text-grayish-blue leading-tight">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </main>
+    <footer class="attribution p-2">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/hariperisetla"
+        >Hari Perisetla</a
+      >.
+    </footer>
   </body>
 </html>
